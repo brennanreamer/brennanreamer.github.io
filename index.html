@@ -272,7 +272,7 @@
 							</div>
 					</section>
 				<!-- Three -->
-					<section id="four">
+<!--					<section id="four">
 						<h2>Get In Touch</h2>
 						<p>Please feel free to contact me at any time.</p>
 						<div class="row">
@@ -288,7 +288,46 @@
 									<li><input type="submit" value="Send Message" /></li>
 								</ul>
 							</div>
-							
+							<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>-->
+  <script>
+    window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+    formbutton("create", {
+		action: "https://formspree.io/f/xgeprjqg",
+		title: "Contact Me",
+		fields: [
+			{
+			type: "email", 
+			label: "Email:", 
+			name: "email",
+			required: true,
+			placeholder: "..."
+			},
+			{
+			type: "textarea",
+			label: "Name:",
+			name: "name",
+			placeholder: "...",
+			},
+			{
+			type: "textarea",
+			label: "Message:",
+			name: "message",
+			placeholder: "...",
+			},
+			{ type: "submit" }
+		],
+		styles: {
+      fontFamily: "Montserrat",
+      title: {
+        background: "gray",
+      },
+      button: {
+        background: "gray",
+      }
+    },
+    initiallyVisible: true
+	});
+  </script>
 							<!--<a href = "mailto: abc@example.com">Send Email</a>-->
 							
 							<div class="col-4 col-12-small">
